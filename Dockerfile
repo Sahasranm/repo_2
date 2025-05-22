@@ -22,7 +22,7 @@ FROM nginx:alpine
 # Copy the built React application to the Nginx server directory
 COPY --from=build /app/dist /usr/share/nginx/html
 
-# Expose port 80 to the outside world
+# Expose port 80 to the outside worlds
 EXPOSE 80
 
 # Start Nginx server
